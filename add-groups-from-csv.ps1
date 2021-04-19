@@ -11,7 +11,7 @@ $ScriptRoot = split-path -parent $MyInvocation.MyCommand.Definition
 Install-Module -Name AzureAD
 
 Get-Module AzureAD
-Connect-AzureAD -TenantId "652f982f-81bb-4d41-85a5-cb86405a230d"
+Connect-AzureAD
 
 
 
