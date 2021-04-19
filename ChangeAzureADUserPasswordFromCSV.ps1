@@ -23,7 +23,7 @@ $UserResetList
 
 $i =0
 while ($i -lt $UserResetList.length){
-
+ 
     $password = ConvertTo-SecureString $UserResetList[$i].Password -AsPlainText -Force
 
     Set-AzureADUserPassword -ObjectId $UserResetList[$i].ObjectID -Password $password
